@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2A3D5D;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #1D2A44;
+            padding: 20px;
+            text-align: center;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: bounce 3s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .competences, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .competences div, .contact div {
+            width: 45%;
+            margin-bottom: 15px;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #1D2A44;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: #1D2A44;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ANDRIAMIARANTSOA FITAHIANA SETRA</h1>
+        <p>Étudiant en informatique | Jeune passionné en dévellopement téchnologique</p>
+    </header>
+
+    <div class="profile">
+        <img src="setra.jpg">
+    </div>
+
+    <section>
+        <h2>A propos de moi</h2>
+        <p> <strong>NOM</strong>:ADRIAMIARANTSOA </p> 
+        <p> <strong>PRENOMS</strong>:FITAHIANA SETRA</p>
+        <p> <strong>DATE DE NAISSANCE</strong>:15 Aout 2005</p>
+        <p> <strong>PROFESSION</strong>:ETUDIANT</p>
+        <p> <strong>ETABLISSEMENT</strong>:EMIT FIANARANTSOA</p>
+        <p> <strong>MENTION</strong>:INFORMATIQUE</p>
+    </section>
+
+    <section>
+        <h2>Compétences</h2>
+        <div class="competences">
+            <p>html css </p>
+            <p>microsoft word / exel </p>
+            <p>java script</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <div class="contact">
+            <div>
+                <p><strong>Téléphone:</strong> +261 38 04 531 68</p>
+                <p><strong>Facebook:</strong> ANDRIAMIARANTSOA FITAHIANA SETRA </p>
+                <p><strong>Email:</strong> fitahianasetra9@gmail.com</p>
+                <p><strong>Localisation:</strong> Fianarantsoa, Madagascar</p>
+            </div>
+            <div>
+                <h3>Envoyez-moi un message</h3>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    <button type="submit">Envoyer les messages</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&#169; 2026 ANDRIAMIARANTSOA FITAHIANA SETRA - Tous droits réservés</p>
+        <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+    </footer>
+</body>
+</html>
